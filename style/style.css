@@ -1,0 +1,193 @@
+/* Defaults */
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #dadada;
+    color: #444;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+#main-container {
+    width: 80%;
+    margin: 1rem auto;
+    max-width: 100rem;
+    min-width: 35rem;
+}
+
+/* Form */
+select,
+option,
+input,
+label {
+    padding: 0.2rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+}
+
+input,
+select {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.4rem
+}
+
+fieldset {
+    padding: 0.5rem 1rem 2rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid #dadada;
+}
+
+legend {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    color: #dadada;
+    letter-spacing: 0.1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+span {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.span-age {
+    padding-top: 0.4rem;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-box-2 {
+    display: flex;
+    flex-direction: column;
+    color: #666
+}
+
+.form-box label {
+    display: none;
+}
+
+.choose {
+    font-size: 1.6rem;
+    padding: 2rem 0 0.5rem 0;
+    text-align: left;
+}
+
+.submit {
+    background-color: #37AF65;
+    font-weight: bold;
+    color: #dadada;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.submit:hover {
+    background-color: rgba(55, 175, 101, 0.8);
+    transition: 0.5s;
+}
+
+.reset {
+    background-color: #dadada;
+    color: #37AF65;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.reset:hover {
+    background-color: rgba(218, 218, 218, 0.8);
+    transition: 0.5s;
+}
+
+#title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#description {
+    font-size: 1.6rem;
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 0.1rem;
+    padding: 2rem 0;
+    color: #666;
+}
+
+#survey-form {
+    color: #dadada;
+    background-color: #242344;
+    padding: 6rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.8rem 0.7rem 2rem #000;
+}
+
+#option,
+#options {
+    color: #666;
+}
+
+#text {
+    border-radius: 0.4rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1.5rem;
+    height: 10rem;
+}
+
+@media (min-width: 600px) {
+
+    .form-box label {
+        display: flex;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    #title {
+        font-size: 3.5rem;
+    }
+
+    label {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-box {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-box label {
+        flex-basis: 28rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    #name, #mail, #number, #option {
+        width: 100%;
+    }
+}
